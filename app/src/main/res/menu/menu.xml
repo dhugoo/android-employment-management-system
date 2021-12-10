@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/insert_records"
+        android:icon="@drawable/ins"
+        android:title="insert new records." />
+    <item
+        android:id="@+id/delete_records"
+        android:icon="@drawable/del"
+        android:title="delete a records." />
+    <item
+        android:id="@+id/search_records"
+        android:icon="@drawable/ser"
+        android:title="search for a particular record." />
+    <item
+        android:id="@+id/modify_records"
+        android:icon="@drawable/mod"
+        android:title="modify certain record." />
+    <item
+        android:id="@+id/display_records"
+        android:icon="@drawable/dis"
+        android:title="display all records in database." />
+</menu>

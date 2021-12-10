@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/delete_Index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D5EBF1"
+        tools:context=".delete">
+
+        <Button
+            android:id="@+id/clearDelete"
+            android:layout_width="140dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="Clear"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconGravity="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/nb"
+            app:layout_constraintEnd_toStartOf="@+id/deleteDelete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idDelete" />
+
+        <Button
+            android:id="@+id/deleteDelete"
+            android:layout_width="140dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_delete"
+            app:iconGravity="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/nb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/clearDelete"
+            app:layout_constraintTop_toBottomOf="@+id/idDelete" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#CDDC39"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu" />
+
+        <EditText
+            android:id="@+id/idDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round"
+            android:drawableStart="@drawable/idico"
+            android:drawableEnd="@drawable/idico"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter ID:"
+            android:inputType="number"
+            android:paddingStart="10dip"
+            android:paddingEnd="10dip"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_200"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textdl" />
+
+        <TextView
+            android:id="@+id/textdl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:text="Enter ID of record to delete it:"
+            android:textAlignment="center"
+            android:textColor="#57385C"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/idDelete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
